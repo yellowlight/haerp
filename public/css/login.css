@@ -1,0 +1,134 @@
+html,
+body {
+   	height: 100%;
+   	margin: 0px;
+   	padding: 0px;
+	background: #333;
+}
+body {
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    content: ".";
+    font-size: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*
+ * Header
+ */
+.header {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.logo {
+    margin-left: 10px;
+    height: 43px;
+    width: 66px;
+    background: url(../images/logo.png) no-repeat;
+    cursor: pointer;
+    float: left;
+}
+
+.logo-title {
+    margin-left: 10px;
+    height: 43px;
+    line-height: 43px;
+	font-family: Georgia, serif;
+	font-size: 24px;
+	font-style: oblique;
+	float: left;
+}
+
+
+/*
+ * Container
+ */
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+.page {
+    margin: 50px auto 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.form-signin {
+	max-width: 360px;
+	margin: 0 auto;
+  	padding: 15px 50px 45px;
+	border: 5px solid rgba(0, 0, 0, 0.5);
+	background: #888;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  	margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .checkbox #remember {
+    float: left;
+}
+
+.form-signin .checkbox #forgot {
+    float: right;
+}
+
+.form-signin .form-control {
+  	position: relative;
+	height: auto;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  	z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  	margin-bottom: 5px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] { 
+  	margin-bottom: 20px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+
+/*
+ * Footer
+ */
+.footer {
+    position: relative;
+	margin-top: -30px;
+	height: 30px;
+	clear: both;
+	text-align: center;
+	color: rgba(255,255,255,.5);
+}

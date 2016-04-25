@@ -7,11 +7,27 @@
   },
   "dependencies": {
     "body-parser": "~1.13.2",
+    "bootstrap": "latest",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "express-session": "latest",
+    "jquery": "latest",
+    "jquery-ui": "latest",
+    "mongoose": "latest",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "socket.io": "latest"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "mocha": "latest",
+    "should": "latest",
+    "supertest": "latest"
   }
 }
