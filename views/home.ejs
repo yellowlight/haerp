@@ -1,4 +1,62 @@
-<% include header.ejs %>
-<h1>Welcome <%= user.username %>, 欢迎登录！！</h1>
-<a class="btn" href="/logout">退出</a>
-<% include footer.ejs %>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="ERP">
+	<meta name="author" content="hl">
+
+	<title>恒爱</title>
+	<!-- 新Bootstrap核心CSS文件 -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/Bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../public/css/login.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap-menu.css">
+	<!-- jQuery文件。务必在bootstrap.min.js之前引入 -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 最新的Bootstrap核心JavaScript文件 -->
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="header clearfix">
+			<div class="logo" onclick="window.location='./'"></div>
+			<div class="logo-title">Hengai Work Manage System</div>
+	    </header>
+		<div class="page clearfix">
+			<div class="sidebar-menu">
+			    <a href="#userMeun" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="icon-user-md icon-large"></i> 用户管理</a>
+			    <ul id="userMeun" class="nav nav-list collapse menu-second">
+			        <li><a href="#"><i class="icon-user"></i> 增加用户</a></li>
+			        <li><a href="#"><i class="icon-edit"></i> 修改用户</a></li>
+			        <li><a href="#"><i class="icon-trash"></i> 删除用户</a></li>
+			        <li><a href="#"><i class="icon-list"></i> 用户列表</a></li>
+			 
+			    </ul>
+			    <a href="#articleMenu" class="nav-header menu-first collapsed" data-toggle="collapse"><i class="icon-book icon-large"></i> 文章管理</a>
+			    <ul id="articleMenu" class="nav nav-list collapse menu-second">
+			        <li><a href="#"><i class="icon-pencil"></i> 添加文章</a></li>
+			        <li><a href="#"><i class="icon-list-alt"></i> 文章列表</a></li>
+			    </ul>
+			</div>
+			<!--
+			<nav class="nav-panel">
+		    	<ul class="nav nav-pills nav-stacked">
+		    		<li role="presentation" class="active"><a href="#">Task Center</a></li>
+		    		<li role="presentation"><a href="#">Data Center</a></li>
+		    		<li role="presentation"><a href="#">Message Center</a></li>
+		    	</ul>
+		    </nav>
+		    -->
+		    <div class="content">
+		    	<div class="gantt"></div>
+		    </div>
+		</div>
+	</div>
+	<footer class="footer">
+		Copyright(C), 2016, Hengai Gaoke Tech. Co. Ltd. All rights reserved.
+	</footer>
+</body>
+</html>
